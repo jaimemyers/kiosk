@@ -3,25 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <title>E-Biz</title>
-<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway:100,200" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
-	<div id="wrapper">
-		<div id="button_1">
-			<a href="http://ebs.chattanooga.gov:8000/OA_HTML/RF.jsp?function_id=30833&resp_id=-1&resp_appl_id=-1&security_group_id=0&lang_code=US&params=YwdexyjHzeGFAimVluPW1A&oas=VNLT2Gzl6oXlBexXbIn_Xw..">Login</a>
-		</div>
-		<div id="button_2">
-			<a class="button" href="#popup1" id="help">Help</a>
-		</div>
-	<div id="popup1" class="overlay">
-		<div class="popup">
-			<h2>Login Help</h2>
-			<a class="close" href="#">x</a>
-			<div class="content">
-				<p>For help logging into E-Biz, please call the IT Service Desk at (423) 643-6301.</p>
+	<div class="flex-container">
+		<div id="wrapper">
+			<header>
+				<h1>City of Chattanooga</h1>
+				<h2>E-Biz</h2>
+			</header>
+
+			<div class="buttons">
+				<a class="button login"href="http://ebs.chattanooga.gov">Login</a>
+				<a class="button help" href="#popup1" id="help">Help</a>
 			</div>
+			<div id="popup1" class="overlay">
+				<div class="popup">
+					<h2>Login Help</h2>
+					<a class="close" href="#">x</a>
+					<div class="content">
+						<p>For help logging into E-Biz, please call the IT Service Desk at (423) 643-6301.</p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </body>
 </html>

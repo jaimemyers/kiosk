@@ -1,25 +1,71 @@
 body {
-  font-family: 'Open Sans Condensed', sans-serif;
-  background-image: url("images/aerial.jpg") ;
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+  background-image: url("image/aerial.jpg") ;
   background-size: cover;
   background-repeat: no-repeat;
+  margin: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+div.flex-container {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2em;
+  font-weight: 300;
+}
+
+header h2 {
+  font-size: 4em;
+  font-weight: 300;
+}
+
+#wrapper {
+  width: 750px;
+  height: 400px;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-#wrapper {
-  max-width: 50%;
-  width: 2000px;
-  height: 500px;
-  background: rgba(0, 0, 0, 0.5);
-  
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
-h1 {
+.button {
+  padding: 15px 75px;
+  background-color: #1481ba;
+  border-radius: 50px;
+  margin: 50px;
+}
+
+.help {
+  margin: 50px;
+}
+
+.popup h1 {
   text-align: center;
-  font-family: Tahoma, Arial, sans-serif;
-  color: orange;
+  font-family: 'Raleway', sans-serif;
+  background-color: blue;
   margin: 100px 0;
 }
 
@@ -36,16 +82,17 @@ h1 {
 
 .button {
   font-size: 1em;
-  padding: 10px;
+  padding: 15px 75px;
   color: #fff;
-  border: 2px solid orange;
-  border-radius: 20px/50px;
+  border-radius: 50px;
   text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease-out;
+  background-color: #1481BA;
 }
-.button:hover {
-  background: orange;
+
+.button {
+  background: #1481BA;
 }
 
 .overlay {
@@ -90,9 +137,10 @@ h1 {
   color: #333;
 }
 .popup .close:hover {
-  color: orange;
+  color: #1481ba;
 }
 .popup .content {
   max-height: 30%;
   overflow: auto;
+  color: black;
 }
